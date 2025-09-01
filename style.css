@@ -1,0 +1,46 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.background {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('img/Show\ do\ Milhão.webp');
+  background-size: cover;
+  background-position: center;
+  
+  position: relative;
+}
+
+.start-button {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%);
+  padding: 15px 40px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(240, 9, 9, 0.7);
+  border: 2px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 10;
+  animation: float 3s ease-in-out infinite;
+  transition: background-color 0.3s ease;
+}
+
+.start-button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #cc0000;
+}
+
+@keyframes float {
+  0%   { transform: translate(-50%, 0); }
+  50%  { transform: translate(-50%, -10px); }
+  100% { transform: translate(-50%, 0); }
+}
